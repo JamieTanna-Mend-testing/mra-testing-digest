@@ -21,5 +21,6 @@
     }
   ],
   "branchConcurrentLimit": 0,
-  "prHourlyLimit": 10000
+  "prHourlyLimit": 10000,
+  "prCreation": "not-pending"
 }
