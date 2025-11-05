@@ -1,17 +1,9 @@
+# Not for real usage
 name: "Code scanning"
 
 on:
   push:
     branches: [main]
-
-  pull_request:
-    # The branches below must be a subset of the branches above
-    branches: [main]
-    types:
-      - opened
-      - synchronize
-      - reopened
-      - ready_for_review
 
   schedule:
     - cron: "0 13 * * 1"
@@ -30,6 +22,8 @@ jobs:
     permissions:
       security-events: write
     steps:
+      - uses: release-drafter/release-drafter@v5
+
       - name: Checkout repository
         uses: actions/checkout@08c6903cd8c0fde910a37f88322edcfb5dd907a8 # v5.0.0
         with:
