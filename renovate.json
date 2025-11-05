@@ -22,7 +22,7 @@
   ],
   "branchConcurrentLimit": 0,
   "prHourlyLimit": 10000,
-  "prCreation": "not-pending",
+  "prCreation": "immediate",
   "separateMajorMinor": true,
   "separateMinorPatch": true,
   "separateMultipleMajor": true
