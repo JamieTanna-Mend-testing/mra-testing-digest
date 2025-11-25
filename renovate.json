@@ -1,9 +1,8 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": [
-    "config:recommended"
+    "config:best-practices"
   ],
-  "minimumReleaseAgeBehaviour": "timestamp-required",
   "packageRules": [
     {
       "description": "Avoid packages that might have a security issue",
@@ -22,7 +21,6 @@
   ],
   "branchConcurrentLimit": 0,
   "prHourlyLimit": 10000,
-  "prCreation": "not-pending",
   "separateMajorMinor": true,
   "separateMinorPatch": true,
   "separateMultipleMajor": true
